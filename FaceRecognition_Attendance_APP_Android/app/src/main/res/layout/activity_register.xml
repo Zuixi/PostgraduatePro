@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include layout="@layout/common_navbar"/>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.NestedScrollView
+            style="@style/common_scrollview">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="64dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="20sp"
+                        android:textColor="@color/color_222222"
+                        android:text="账号"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:textSize="18sp"
+                        android:textColor="@color/color_222222"
+                        android:hint="请输入账号"
+                        android:textColorHint="@color/color_999999"
+                        android:layout_marginTop="48dp"
+                        android:id="@+id/edt_reg_account"
+                        android:background="@color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_marginTop="14dp"
+                        android:background="@color/color_3085FC"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"/>
+                    <TextView
+                        android:layout_marginTop="60dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/color_222222"
+                        android:text="密码"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:textSize="18sp"
+                        android:textColor="@color/color_222222"
+                        android:hint="请输入密码"
+                        android:textColorHint="@color/color_999999"
+                        android:layout_marginTop="48dp"
+                        android:id="@+id/edt_reg_pwd"
+                        android:inputType="textPassword"
+                        android:background="@color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_marginTop="14dp"
+                        android:background="@color/color_3085FC"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tvbtn_next"
+            android:layout_marginBottom="15dp"
+            android:text="注册"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            style="@style/common_btn" />
+    </RelativeLayout>
+</LinearLayout>
